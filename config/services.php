@@ -35,4 +35,8 @@ return [
         ],
     ],
 
+    'auth_service' => [
+        'base_url' => env('AUTH_SERVICE_URL', 'http://user:80'),
+    ],
+
 ];

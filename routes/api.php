@@ -16,17 +16,15 @@ Route::get('programs/{slug}', [ProgramController::class, 'show'])->name('program
 Route::get('facilities', [FacilityController::class, 'index'])->name('facilities.index');
 
 /*
-| Admin panel endpoints, authenticated with Sanctum API tokens.
+| Admin panel endpoints, authenticated with user microservice token.
 */
 Route::prefix('admin')->name('admin.')->group(function () {
-    Route::post('login', [Admin\AuthController::class, 'login'])
-        ->middleware('throttle:admin-login')
-        ->name('login');
-
-    Route::middleware('auth:sanctum')->group(function () {
-        Route::get('me', [Admin\AuthController::class, 'me'])->name('me');
-        Route::post('logout', [Admin\AuthController::class, 'logout'])->name('logout');
-        Route::put('profile', [Admin\ProfileController::class, 'update'])->name('profile.update');
+    Route::middleware('verify.auth:ADMIN,KEPALA_SEKOLAH,TU')->group(function () {
+        Route::get('me', function (\Illuminate\Http\Request $request) {
+            return response()->json([
+                'data' => $request->attributes->get('auth_user') ?? $request->user(),
+            ]);
+        })->name('me');
 
         Route::get('dashboard', Admin\DashboardController::class)->name('dashboard');
 

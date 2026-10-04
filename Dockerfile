@@ -10,6 +10,7 @@ RUN apk add nodejs && \
 
 RUN composer install && \
     npm install && \
-    npm run build
+    npm run build && \
+    php artisan storage:link
 
 CMD [ "php", "artisan", "serve", "--host=0.0.0.0", "--port=80" ]

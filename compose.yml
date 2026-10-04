@@ -4,6 +4,8 @@ services:
     container_name: lpbe
     env_file:
       - .env
+    volumes:
+      - lpbe_storage:/app/storage/app/public
     depends_on:
       postgres:
         condition: service_healthy
@@ -29,6 +31,7 @@ services:
 
 volumes:
   pgdata:
+  lpbe_storage:
 
 networks:
   web-penus-network:

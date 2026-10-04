@@ -38,7 +38,7 @@ trait HasPublicImage
     protected function imageUrl(): Attribute
     {
         return Attribute::get(
-            fn (): ?string => $this->image ? url('storage/'.$this->image) : null,
+            fn (): ?string => $this->image ? '/storage/'.$this->image : null,
         );
     }
 }

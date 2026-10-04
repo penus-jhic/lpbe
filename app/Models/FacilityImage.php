@@ -55,6 +55,6 @@ class FacilityImage extends Model
      */
     protected function url(): Attribute
     {
-        return Attribute::get(fn (): string => url('storage/'.$this->path));
+        return Attribute::get(fn (): string => '/storage/'.$this->path);
     }
 }

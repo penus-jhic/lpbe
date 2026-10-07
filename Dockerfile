@@ -15,4 +15,6 @@ RUN composer install && \
 
 RUN php artisan key:generate
 
-CMD [ "php", "artisan", "serve", "--host=0.0.0.0", "--port=80" ]
+# --no-reload: tanpa ini "artisan serve" membuang env dari compose (env_file) lalu membaca ulang .env yang ikut
+# ter-copy saat build, sehingga web server bisa memakai konfigurasi (mis. database) berbeda dari "docker exec ... artisan"
+CMD [ "php", "artisan", "serve", "--host=0.0.0.0", "--port=80", "--no-reload" ]

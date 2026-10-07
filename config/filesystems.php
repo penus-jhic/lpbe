@@ -33,7 +33,9 @@ return [
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app/private'),
-            'serve' => true,
+            // false: kalau true, Laravel mendaftarkan route GET storage/{path} (signed URL, isi app/private) yang
+            // menimpa route /storage di routes/web.php, sehingga foto unggahan di disk public jadi 403
+            'serve' => false,
             'throw' => false,
             'report' => false,
         ],

@@ -1,177 +1,98 @@
 [
     {
-        "slug": "kelas-industri",
-        "title": "Kelas Industri",
-        "description": "Kelas khusus yang kurikulumnya disusun bersama perusahaan mitra. Siswa belajar langsung dari praktisi industri dan berpeluang direkrut setelah lulus.",
-        "icon": "briefcase",
-        "image": "programUnggulan/Basket.jpeg",
-        "audience": "Siswa kelas XI & XII terpilih",
+        "slug": "preneurs-day",
+        "title": "Preneurs Day",
+        "description": "Hari wirausaha siswa: setiap kelas membuka stan dan menjual produk atau jasa buatan sendiri, dari ide, modal, hingga melayani pembeli.",
+        "icon": "bulb",
+        "image": "programUnggulan/preneurs-day.jpg",
+        "audience": "Seluruh siswa",
+        "schedule": "Setiap semester",
+        "body": [
+            "Sesuai nilai sekolah \"Terampil, Entrepreneur, Religius\", Preneurs Day melatih siswa menjalankan usaha sungguhan. Setiap kelas membentuk tim, menentukan produk atau jasa yang akan dijual, lalu membuka stan di lingkungan sekolah dan melayani pembeli dari warga sekolah, orang tua, dan tamu undangan.",
+            {
+                "heading": "Yang Dipelajari Siswa"
+            },
+            {
+                "list": [
+                    "Mencari ide usaha dari keahlian jurusan dan kebutuhan di sekitar",
+                    "Menghitung modal, harga jual, dan keuntungan",
+                    "Membuat produk, kemasan, dan materi promosi",
+                    "Melayani pembeli dan mencatat penjualan",
+                    "Mengevaluasi hasil usaha bersama guru pendamping"
+                ]
+            },
+            "Tim lintas jurusan saling melengkapi: siswa Multimedia menyiapkan desain dan promosi, siswa RPL membuat katalog digital, dan siswa PKM mengelola pembukuan usaha."
+        ]
+    },
+    {
+        "slug": "devacto",
+        "title": "Devacto",
+        "description": "Kegiatan pendalaman keahlian setelah jam sekolah. Tidak wajib, terbuka untuk semua siswa, dan suasananya seperti komunitas yang saling berbagi ilmu.",
+        "icon": "users",
+        "image": "programUnggulan/devacto.jpg",
+        "audience": "Siswa semua jurusan, tidak wajib",
+        "schedule": "Setelah jam sekolah",
+        "body": [
+            "Devacto adalah wadah bagi siswa yang ingin belajar lebih dalam di bidang jurusannya. Kegiatan berlangsung setelah jam sekolah, dan setiap jurusan punya Devacto sendiri dengan topik yang mengikuti perkembangan dunia kerja.",
+            {
+                "heading": "Seperti Komunitas"
+            },
+            "Siswa saling berbagi ilmu dan keahlian yang mereka punya. Kakak kelas membantu adik kelas, dan guru jurusan mendampingi supaya materi tetap terarah. Hasil karya Devacto ditampilkan di halaman masing-masing jurusan.",
+            {
+                "list": [
+                    "Terbuka untuk semua siswa, tanpa seleksi",
+                    "Topik berbeda di setiap jurusan",
+                    "Belajar lewat proyek dan karya nyata"
+                ]
+            }
+        ]
+    },
+    {
+        "slug": "bimbingan-karir",
+        "title": "Bimbingan Karir",
+        "description": "Pendampingan memilih jalan setelah lulus, entah bekerja, berwirausaha, atau kuliah, bersama guru BK dan Bursa Kerja Khusus (BKK) sekolah.",
+        "icon": "flag",
+        "image": "programUnggulan/bimbingan-karir.jpg",
+        "audience": "Siswa kelas X sampai XII",
         "schedule": "Sepanjang tahun ajaran",
         "body": [
-            "Materi kelas industri disusun bersama perusahaan mitra, sehingga yang dipelajari siswa selalu mengikuti teknologi dan standar kerja yang sedang dipakai di lapangan. Sebagian pertemuan diajar langsung oleh praktisi dari perusahaan, sementara guru produktif mendampingi siswa dalam pembelajaran sehari-hari.",
+            "Setiap siswa punya tujuan yang berbeda setelah lulus. Bimbingan Karir membantu siswa mengenali minat dan kemampuannya sejak kelas X, lalu menyiapkan langkah yang dibutuhkan untuk mencapai tujuannya.",
+            {
+                "heading": "Bentuk Kegiatan"
+            },
+            {
+                "list": [
+                    "Konseling karir bersama guru Bimbingan Konseling",
+                    "Pelatihan menulis CV, surat lamaran, dan simulasi wawancara kerja",
+                    "Informasi lowongan kerja dan rekrutmen dari mitra Bursa Kerja Khusus (BKK)",
+                    "Informasi beasiswa dan jalur masuk perguruan tinggi"
+                ]
+            },
+            "Perkembangan rencana karir siswa dikomunikasikan kepada orang tua, sehingga keputusan setelah lulus diambil bersama."
+        ]
+    },
+    {
+        "slug": "workshop-industri",
+        "title": "Pelatihan Workshop Industri",
+        "description": "Praktisi dari luar sekolah yang berpengalaman di industri datang mengajar langsung, sehingga siswa belajar standar dan cara kerja yang dipakai di dunia kerja.",
+        "icon": "factory",
+        "image": "programUnggulan/workshop-industri.jpg",
+        "audience": "Siswa sesuai jurusan",
+        "schedule": "Terjadwal setiap semester",
+        "body": [
+            "Dalam Pelatihan Workshop Industri, sekolah mengundang tamu dari luar sekolah yang sudah berpengalaman di bidangnya untuk mengajar siswa secara langsung. Materinya diambil dari pekerjaan sehari-hari mereka, jadi siswa melihat sendiri bagaimana keahlian jurusannya dipakai di tempat kerja.",
             {
                 "heading": "Yang Didapat Siswa"
             },
             {
                 "list": [
-                    "Materi dan studi kasus yang diambil dari kebutuhan nyata perusahaan mitra",
-                    "Kelas tamu bersama praktisi industri setiap semester",
-                    "Prioritas tempat Praktik Kerja Lapangan (PKL) di perusahaan mitra",
-                    "Peluang direkrut melalui Bursa Kerja Khusus (BKK) setelah lulus"
+                    "Materi dan studi kasus dari pengalaman nyata praktisi industri",
+                    "Praktik langsung dengan alat dan standar kerja industri",
+                    "Kesempatan bertanya seputar karir dan dunia kerja",
+                    "Kenalan baru dari dunia industri untuk bekal PKL dan karir"
                 ]
             },
-            {
-                "heading": "Cara Bergabung"
-            },
-            "Peserta dipilih di akhir kelas X berdasarkan nilai mata pelajaran produktif, kehadiran, dan hasil wawancara bersama guru jurusan. Kuota setiap kelas ditentukan bersama perusahaan mitra agar pendampingan tetap maksimal.",
-            {
-                "quote": "Kelas industri membuat siswa terbiasa dengan standar yang benar-benar dipakai di tempat kerja, jadi saat lulus mereka tidak lagi kaget.",
-                "by": "Wulan Sari, S.E., M.M., Wakasek Bidang Hubungan Industri"
-            },
-            "Setiap akhir tahun ajaran, sekolah dan perusahaan mitra mengevaluasi materi bersama supaya kelas industri tetap relevan dengan perkembangan dunia kerja."
-        ]
-    },
-    {
-        "slug": "teaching-factory",
-        "title": "Teaching Factory",
-        "description": "Siswa mengerjakan pesanan dan proyek sungguhan dari klien, sehingga terbiasa dengan standar dan ritme kerja industri.",
-        "icon": "factory",
-        "image": "programUnggulan/Basket.jpeg",
-        "audience": "Siswa kelas XI & XII semua jurusan",
-        "schedule": "Terjadwal di jam praktik",
-        "body": [
-            "Teaching Factory (TeFa) mengubah ruang praktik menjadi unit produksi. Siswa tidak lagi mengerjakan soal latihan, tetapi pesanan sungguhan dari klien, mulai dari warga sekolah, UMKM sekitar, hingga perusahaan mitra. Guru berperan sebagai supervisor yang memastikan setiap hasil kerja layak diserahkan.",
-            {
-                "heading": "Layanan Setiap Jurusan"
-            },
-            {
-                "list": [
-                    "Multimedia: foto produk, video profil, dan desain materi promosi",
-                    "Rekayasa Perangkat Lunak: pembuatan website dan aplikasi sederhana",
-                    "Teknik Komputer dan Jaringan: instalasi jaringan dan perawatan komputer",
-                    "Perbankan dan Keuangan Mikro: layanan Bank Mini dan pengelolaan KBS (Toko Sekolah)",
-                    "Teknik Otomasi Industri: perakitan panel listrik dan perawatan perangkat otomasi"
-                ]
-            },
-            {
-                "heading": "Alur Kerja Seperti di Industri"
-            },
-            "Setiap pesanan melewati tahapan yang sama dengan di tempat kerja: menerima brief dari klien, menyusun rencana dan pembagian tugas, mengerjakan sesuai tenggat, pemeriksaan kualitas oleh guru, lalu serah terima. Dengan begitu siswa belajar tanggung jawab, komunikasi dengan klien, dan kerja tim, bukan hanya keterampilan teknis.",
-            "Pendapatan dari TeFa dipakai kembali untuk menambah bahan dan peralatan praktik, sehingga manfaatnya dirasakan seluruh siswa."
-        ]
-    },
-    {
-        "slug": "sertifikasi",
-        "title": "Sertifikasi Kompetensi",
-        "description": "Uji kompetensi keahlian dengan sertifikat resmi yang diakui industri sebagai bekal melamar kerja.",
-        "icon": "award",
-        "image": "programUnggulan/Basket.jpeg",
-        "audience": "Siswa kelas XII",
-        "schedule": "Menjelang akhir tahun ajaran",
-        "body": [
-            "Selain ijazah, lulusan SMK Plus Pelita Nusantara membawa sertifikat kompetensi yang membuktikan keahlian mereka di bidang masing-masing. Uji kompetensi dilaksanakan bersama Lembaga Sertifikasi Profesi (LSP) di Ruang LSP sekolah dengan asesor yang berpengalaman di bidangnya.",
-            {
-                "heading": "Tahapan Sertifikasi"
-            },
-            {
-                "list": [
-                    "Pendaftaran dan pemeriksaan kelengkapan dokumen peserta",
-                    "Pembekalan dan simulasi uji bersama guru produktif",
-                    "Uji kompetensi: praktik langsung, observasi, dan wawancara oleh asesor",
-                    "Penerbitan sertifikat bagi peserta yang dinyatakan kompeten"
-                ]
-            },
-            {
-                "heading": "Kenapa Penting?"
-            },
-            "Sertifikat kompetensi menjadi nilai tambah saat melamar kerja karena perusahaan bisa langsung melihat keahlian yang sudah teruji. Banyak lowongan dari mitra Bursa Kerja Khusus sekolah yang mensyaratkan atau mengutamakan pelamar bersertifikat.",
-            "Persiapan dimulai sejak kelas XI melalui pembelajaran produktif dan Teaching Factory, sehingga siswa sudah terbiasa dengan standar penilaian saat uji berlangsung."
-        ]
-    },
-    {
-        "slug": "bahasa-asing",
-        "title": "Kelas Bahasa Asing",
-        "description": "Pembelajaran Bahasa Inggris dan Jepang untuk persiapan kerja dan magang di luar negeri.",
-        "icon": "globe",
-        "image": "programUnggulan/Basket.jpeg",
-        "audience": "Seluruh siswa",
-        "schedule": "Dua kali sepekan",
-        "body": [
-            "Kemampuan berbahasa asing membuka peluang kerja yang lebih luas, baik di perusahaan multinasional di Indonesia maupun melalui program magang di luar negeri. Karena itu sekolah menambah jam khusus Bahasa Inggris dan Bahasa Jepang di luar mata pelajaran wajib.",
-            {
-                "heading": "Materi yang Dipelajari"
-            },
-            {
-                "list": [
-                    "Bahasa Inggris untuk percakapan kerja, presentasi, dan wawancara",
-                    "Istilah teknis Bahasa Inggris sesuai jurusan masing-masing",
-                    "Bahasa Jepang dasar: huruf hiragana dan katakana serta percakapan sehari-hari",
-                    "Persiapan tes kemampuan bahasa untuk syarat kerja dan magang"
-                ]
-            },
-            "Pembelajaran berlangsung di Laboratorium Bahasa dengan kelompok kecil, sehingga setiap siswa mendapat kesempatan praktik berbicara lebih banyak.",
-            {
-                "quote": "Bahasa itu keterampilan, bukan hafalan. Makin sering dipakai, makin percaya diri siswa saat harus berbicara dengan orang asing.",
-                "by": "Dewi Lestari, S.Pd., Guru Bahasa Inggris"
-            }
-        ]
-    },
-    {
-        "slug": "technopreneur",
-        "title": "Technopreneur",
-        "description": "Pendampingan siswa membangun usaha sendiri, mulai dari ide bisnis hingga pemasaran digital.",
-        "icon": "bulb",
-        "image": "programUnggulan/Basket.jpeg",
-        "audience": "Seluruh siswa",
-        "schedule": "Satu proyek setiap semester",
-        "body": [
-            "Tidak semua lulusan harus mencari kerja, sebagian bisa menciptakan lapangan kerja. Program Technopreneur mendampingi siswa mengubah keahlian jurusannya menjadi produk atau jasa yang bisa dijual, sejalan dengan semangat sekolah mencetak lulusan berjiwa wirausaha.",
-            {
-                "heading": "Dari Ide Sampai Terjual"
-            },
-            {
-                "list": [
-                    "Mencari ide usaha dari masalah di sekitar dan keahlian jurusan",
-                    "Menghitung modal, harga jual, dan perkiraan keuntungan",
-                    "Membuat produk awal lalu mengujinya ke calon pembeli",
-                    "Memasarkan produk lewat media sosial dan toko online",
-                    "Menjual langsung di bazar dan market day sekolah"
-                ]
-            },
-            "Setiap tim terdiri dari siswa lintas jurusan, misalnya siswa RPL membangun toko online, siswa Multimedia mengurus foto dan konten promosi, dan siswa PKM mengelola keuangan usaha.",
-            {
-                "heading": "Pameran Akhir Semester"
-            },
-            "Di akhir semester, tim terbaik mempresentasikan usahanya di depan guru dan tamu undangan dari dunia usaha. Usaha yang menjanjikan mendapat pendampingan lanjutan agar bisa terus berjalan setelah siswa lulus."
-        ]
-    },
-    {
-        "slug": "pembinaan-karakter",
-        "title": "Pembinaan Karakter",
-        "description": "Program keagamaan, kedisiplinan, dan kepemimpinan yang berjalan setiap hari untuk membentuk lulusan yang berakhlak.",
-        "icon": "book",
-        "image": "programUnggulan/Basket.jpeg",
-        "audience": "Seluruh siswa",
-        "schedule": "Setiap hari",
-        "body": [
-            "Sesuai motto \"Success by Character\", keahlian saja tidak cukup. Pembinaan karakter menjadi bagian dari keseharian di sekolah, sehingga disiplin, sopan santun, dan tanggung jawab tumbuh menjadi kebiasaan, bukan sekadar aturan.",
-            {
-                "heading": "Kegiatan Rutin"
-            },
-            {
-                "list": [
-                    "Apel pagi dan pemeriksaan kerapian setiap awal pekan",
-                    "Salat duha dan zuhur berjamaah di Masjid Sekolah",
-                    "Tadarus Al-Qur'an sebelum pelajaran dimulai",
-                    "Latihan Dasar Kepemimpinan Siswa (LDKS) untuk pengurus organisasi",
-                    "Pembiasaan budaya 5S: senyum, salam, sapa, sopan, dan santun"
-                ]
-            },
-            {
-                "quote": "Industri bisa melatih keterampilan baru, tetapi sikap kerja yang baik harus dibentuk sejak di sekolah. Itulah yang membuat lulusan kami berbeda.",
-                "by": "Drs. Ahmad Fauzi, M.Pd., Kepala Sekolah"
-            },
-            "Perkembangan sikap siswa dipantau wali kelas bersama guru Bimbingan Konseling dan dikomunikasikan kepada orang tua, sehingga pembinaan di sekolah sejalan dengan di rumah."
+            "Topik workshop disesuaikan dengan setiap jurusan dan diperbarui mengikuti perkembangan teknologi."
         ]
     }
 ]

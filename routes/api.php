@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\Api\ActivityController;
 use App\Http\Controllers\Api\Admin;
 use App\Http\Controllers\Api\FacilityController;
 use App\Http\Controllers\Api\NewsController;
 use App\Http\Controllers\Api\ProgramController;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,13 +16,15 @@ Route::get('news/{slug}', [NewsController::class, 'show'])->name('news.show');
 Route::get('programs', [ProgramController::class, 'index'])->name('programs.index');
 Route::get('programs/{slug}', [ProgramController::class, 'show'])->name('programs.show');
 Route::get('facilities', [FacilityController::class, 'index'])->name('facilities.index');
+Route::get('activities', [ActivityController::class, 'index'])->name('activities.index');
+Route::get('activities/{slug}', [ActivityController::class, 'show'])->name('activities.show');
 
 /*
 | Admin panel endpoints, authenticated with user microservice token.
 */
 Route::prefix('admin')->name('admin.')->group(function () {
     Route::middleware('verify.auth:ADMIN,KEPALA_SEKOLAH,TU')->group(function () {
-        Route::get('me', function (\Illuminate\Http\Request $request) {
+        Route::get('me', function (Request $request) {
             return response()->json([
                 'data' => $request->attributes->get('auth_user') ?? $request->user(),
             ]);
@@ -35,5 +39,8 @@ Route::prefix('admin')->name('admin.')->group(function () {
 
         Route::post('facilities/reorder', [Admin\FacilityController::class, 'reorder'])->name('facilities.reorder');
         Route::apiResource('facilities', Admin\FacilityController::class);
+
+        Route::post('activities/reorder', [Admin\ActivityController::class, 'reorder'])->name('activities.reorder');
+        Route::apiResource('activities', Admin\ActivityController::class);
     });
 });

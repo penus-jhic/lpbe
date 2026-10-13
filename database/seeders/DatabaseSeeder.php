@@ -19,6 +19,7 @@ class DatabaseSeeder extends Seeder
             NewsSeeder::class,
             ProgramSeeder::class,
             FacilitySeeder::class,
+            ActivitySeeder::class,
         ]);
     }
 }

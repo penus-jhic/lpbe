@@ -46,7 +46,7 @@ class Program extends Model
     }
 
     /**
-     * Order used by the homepage carousel and the admin list.
+     * Order used by the homepage cards and the admin list.
      */
     #[Scope]
     protected function ordered(Builder $query): void

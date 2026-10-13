@@ -21,7 +21,7 @@ class ProgramController extends Controller
     }
 
     /**
-     * New programs are added at the end of the homepage carousel.
+     * New programs are added after the last homepage card.
      */
     public function store(ProgramRequest $request): JsonResponse
     {
@@ -53,7 +53,7 @@ class ProgramController extends Controller
     }
 
     /**
-     * Saves the carousel order. `ids` must list every program exactly once.
+     * Saves the homepage card order. `ids` must list every program exactly once.
      */
     public function reorder(Request $request): AnonymousResourceCollection
     {

@@ -2,6 +2,7 @@
 
 use App\Models\User;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Support\Facades\Http;
 use Laravel\Sanctum\Sanctum;
 use Tests\TestCase;
 
@@ -47,13 +48,23 @@ expect()->extend('toBeOne', function () {
 */
 
 /**
- * Signs in as an administrator through Sanctum (every user is an administrator).
+ * Signs in as an administrator. Admin routes verify the bearer token with the user microservice,
+ * so its verify endpoint is faked to accept the token as an ADMIN account.
  */
 function actingAsAdmin(): User
 {
     $admin = User::factory()->create();
 
     Sanctum::actingAs($admin);
+
+    Http::fake([
+        '*/api/user/verify' => Http::response([
+            'success' => true,
+            'data' => ['id' => $admin->id, 'name' => $admin->name, 'role' => 'ADMIN', 'status_aktif' => true],
+        ]),
+    ]);
+
+    test()->withToken('admin-test-token');
 
     return $admin;
 }

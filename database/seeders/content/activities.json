@@ -1,0 +1,252 @@
+[
+    {
+        "category": "talent_day",
+        "slug": "tata-boga",
+        "title": "Tata Boga",
+        "description": "Belajar memasak dari dasar, mulai dari resep rumahan hingga menu yang layak dijual, sekaligus mengenal kebersihan dan penyajian makanan.",
+        "icon": "cooking",
+        "image": null,
+        "schedule": null,
+        "body": [
+            "Kelas Tata Boga mengajak siswa belajar memasak langsung di dapur, mulai dari mengenal bahan dan alat hingga menyajikan hidangan yang menarik.",
+            {
+                "heading": "Yang Dipelajari"
+            },
+            {
+                "list": [
+                    "Teknik dasar memasak dan mengolah bahan makanan",
+                    "Kebersihan dan keamanan pangan di dapur",
+                    "Menghitung biaya bahan dan harga jual menu",
+                    "Menata dan menyajikan hidangan"
+                ]
+            },
+            "Menu hasil kelas bisa menjadi ide produk saat Preneurs Day."
+        ]
+    },
+    {
+        "category": "talent_day",
+        "slug": "english-club",
+        "title": "English Club",
+        "description": "Melatih percakapan Bahasa Inggris lewat diskusi, permainan, dan presentasi, supaya siswa percaya diri berbicara di depan orang lain.",
+        "icon": "globe",
+        "image": null,
+        "schedule": null,
+        "body": [
+            "English Club menjadi tempat siswa berlatih berbicara Bahasa Inggris dalam suasana santai, tanpa takut salah.",
+            {
+                "heading": "Kegiatan"
+            },
+            {
+                "list": [
+                    "Diskusi dan percakapan sehari-hari",
+                    "Permainan kosakata dan tebak kata",
+                    "Latihan presentasi di depan teman",
+                    "Persiapan wawancara kerja dalam Bahasa Inggris"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "talent_day",
+        "slug": "programming",
+        "title": "Programming",
+        "description": "Belajar logika pemrograman dan membuat aplikasi atau website sederhana. Terbuka untuk siswa semua jurusan, tidak hanya RPL.",
+        "icon": "code",
+        "image": null,
+        "schedule": null,
+        "body": [
+            "Kelas Programming terbuka untuk siswa semua jurusan yang penasaran bagaimana aplikasi dan website dibuat.",
+            {
+                "heading": "Yang Dipelajari"
+            },
+            {
+                "list": [
+                    "Logika dan algoritma dasar",
+                    "Membuat halaman website sederhana",
+                    "Membuat aplikasi kecil untuk kebutuhan sehari-hari",
+                    "Bekerja dalam tim untuk menyelesaikan proyek"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "talent_day",
+        "slug": "elektronika",
+        "title": "Elektronika",
+        "description": "Merakit rangkaian elektronik dan mikrokontroler, dari lampu kedip sampai alat otomatis sederhana untuk kebutuhan sehari-hari.",
+        "icon": "cpu",
+        "image": null,
+        "schedule": null,
+        "body": [
+            "Di kelas Elektronika siswa merakit rangkaian sendiri dan melihat langsung bagaimana komponen elektronik bekerja.",
+            {
+                "heading": "Yang Dipelajari"
+            },
+            {
+                "list": [
+                    "Mengenal komponen elektronik dan alat ukur",
+                    "Membaca dan merakit rangkaian sederhana",
+                    "Dasar pemrograman mikrokontroler",
+                    "Membuat alat otomatis sederhana"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "talent_day",
+        "slug": "game-development",
+        "title": "Game Development",
+        "description": "Merancang dan membuat game sendiri, mulai dari ide cerita, desain karakter, hingga pemrograman game yang bisa dimainkan teman-teman.",
+        "icon": "gamepad",
+        "image": null,
+        "schedule": null,
+        "body": [
+            "Game Development mengajak siswa membuat game dari nol, menggabungkan cerita, desain, dan pemrograman.",
+            {
+                "heading": "Tahapan Membuat Game"
+            },
+            {
+                "list": [
+                    "Menyusun ide dan cerita game",
+                    "Mendesain karakter dan tampilan",
+                    "Memprogram aturan permainan",
+                    "Menguji game bersama teman lalu memperbaikinya"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "ekskul",
+        "slug": "futsal",
+        "title": "Futsal",
+        "description": "Latihan teknik, strategi, dan kerja sama tim, serta kesempatan mewakili sekolah di turnamen antarsekolah.",
+        "icon": "ball",
+        "image": null,
+        "schedule": null,
+        "body": [
+            "Ekskul Futsal melatih teknik bermain, kebugaran, dan kekompakan tim lewat latihan rutin.",
+            {
+                "heading": "Kegiatan"
+            },
+            {
+                "list": [
+                    "Latihan teknik dasar: passing, dribbling, dan shooting",
+                    "Latihan strategi dan pola permainan",
+                    "Pertandingan persahabatan",
+                    "Seleksi tim untuk turnamen antarsekolah"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "ekskul",
+        "slug": "basket",
+        "title": "Basket",
+        "description": "Membangun kebugaran, sportivitas, dan kekompakan tim lewat latihan rutin dan pertandingan persahabatan.",
+        "icon": "ball",
+        "image": "activities/basket.jpeg",
+        "schedule": null,
+        "body": [
+            "Ekskul Basket membangun kebugaran, sportivitas, dan kerja sama tim.",
+            {
+                "heading": "Kegiatan"
+            },
+            {
+                "list": [
+                    "Latihan teknik dasar: dribble, passing, dan shooting",
+                    "Latihan strategi menyerang dan bertahan",
+                    "Pertandingan persahabatan dan turnamen"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "ekskul",
+        "slug": "bola-voli",
+        "title": "Bola Voli",
+        "description": "Latihan teknik dasar hingga strategi permainan voli, untuk siswa yang ingin berprestasi maupun sekadar menyalurkan hobi.",
+        "icon": "ball",
+        "image": null,
+        "schedule": null,
+        "body": [
+            "Ekskul Bola Voli terbuka untuk siswa yang ingin berprestasi maupun sekadar menyalurkan hobi.",
+            {
+                "heading": "Kegiatan"
+            },
+            {
+                "list": [
+                    "Latihan teknik dasar: servis, passing, dan smash",
+                    "Latihan kerja sama dan rotasi tim",
+                    "Pertandingan persahabatan"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "ekskul",
+        "slug": "pencak-silat",
+        "title": "Pencak Silat",
+        "description": "Bela diri warisan budaya Indonesia yang melatih ketangkasan, disiplin, dan kepercayaan diri.",
+        "icon": "trophy",
+        "image": null,
+        "schedule": null,
+        "body": [
+            "Pencak Silat melatih ketangkasan dan kedisiplinan sekaligus mengenalkan siswa pada warisan budaya Indonesia.",
+            {
+                "heading": "Kegiatan"
+            },
+            {
+                "list": [
+                    "Latihan fisik dan kelenturan",
+                    "Jurus dan teknik dasar bela diri",
+                    "Pembinaan sikap dan sportivitas"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "ekskul",
+        "slug": "rohis",
+        "title": "Rohis",
+        "description": "Rohani Islam: kajian, tadarus, dan kegiatan keagamaan yang memperkuat iman serta akhlak siswa.",
+        "icon": "mosque",
+        "image": null,
+        "schedule": null,
+        "body": [
+            "Rohis (Rohani Islam) menjadi wadah siswa memperdalam ilmu agama dan mempererat persaudaraan.",
+            {
+                "heading": "Kegiatan"
+            },
+            {
+                "list": [
+                    "Kajian rutin dan tadarus Al-Qur'an",
+                    "Peringatan hari besar Islam di sekolah",
+                    "Kegiatan sosial dan berbagi"
+                ]
+            }
+        ]
+    },
+    {
+        "category": "ekskul",
+        "slug": "pramuka",
+        "title": "Pramuka",
+        "description": "Melatih kemandirian, kepemimpinan, dan kepedulian lewat perkemahan, keterampilan alam terbuka, dan kegiatan sosial.",
+        "icon": "tent",
+        "image": null,
+        "schedule": null,
+        "body": [
+            "Pramuka melatih kemandirian, kepemimpinan, dan kepedulian terhadap sesama dan lingkungan.",
+            {
+                "heading": "Kegiatan"
+            },
+            {
+                "list": [
+                    "Latihan rutin keterampilan kepramukaan",
+                    "Perkemahan dan kegiatan alam terbuka",
+                    "Latihan kepemimpinan dan kerja regu",
+                    "Bakti sosial"
+                ]
+            }
+        ]
+    }
+]

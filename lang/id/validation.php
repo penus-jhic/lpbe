@@ -90,6 +90,7 @@ return [
         'majors' => 'jurusan',
         'majors.*' => 'jurusan',
         'ids' => 'urutan',
+        'ids.*' => 'urutan',
         'name' => 'nama',
         'email' => 'email',
         'password' => 'kata sandi',

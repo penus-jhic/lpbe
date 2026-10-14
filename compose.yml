@@ -4,30 +4,39 @@ services:
     container_name: lpbe
     env_file:
       - .env
+    # .env berisi nilai untuk dev lokal; nilai khusus Docker ditimpa di sini
+    environment:
+      APP_URL: http://localhost:6767
+      DB_CONNECTION: pgsql
+      DB_HOST: db-lpbe
+      DB_PORT: 5432
+      AUTH_SERVICE_URL: http://user:80
     volumes:
       - lpbe_storage:/app/storage/app/public
     depends_on:
-      postgres:
+      db-lpbe:
         condition: service_healthy
     networks:
       - web-penus-network
 
-  postgres:
+  # Nama service dibuat unik (bukan "postgres") karena bkk/ppdb/userapi juga ada di web-penus-network
+  db-lpbe:
     image: postgres:17
     container_name: db-lpbe
     environment:
+      POSTGRES_USER: ${DB_USERNAME}
       POSTGRES_PASSWORD: ${DB_PASSWORD}
       POSTGRES_DB: ${DB_DATABASE}
     volumes:
       - pgdata:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres -d ${DB_DATABASE}"]
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USERNAME} -d ${DB_DATABASE}"]
       interval: 5s
       timeout: 5s
       retries: 5
       start_period: 10s
     networks:
-      - web-penus-network      
+      - web-penus-network
 
 volumes:
   pgdata:

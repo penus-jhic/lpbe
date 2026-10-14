@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Middleware\VerifyAuthToken;
 use Illuminate\Foundation\Application;
 use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Middleware\SubstituteBindings;
 
 return Application::configure(basePath: dirname(__DIR__))
     ->withRouting(
@@ -18,8 +20,14 @@ return Application::configure(basePath: dirname(__DIR__))
         ]);
 
         $middleware->alias([
-            'verify.auth' => \App\Http\Middleware\VerifyAuthToken::class,
+            'verify.auth' => VerifyAuthToken::class,
         ]);
+
+        // Cek token sebelum route model binding, supaya request tanpa token dapat 401, bukan 404 untuk ID yang tidak ada
+        $middleware->prependToPriorityList(
+            before: SubstituteBindings::class,
+            prepend: VerifyAuthToken::class,
+        );
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         $exceptions->shouldRenderJsonWhen(

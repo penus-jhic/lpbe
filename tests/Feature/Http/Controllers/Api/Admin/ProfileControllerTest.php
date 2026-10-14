@@ -4,6 +4,8 @@ use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Laravel\Sanctum\PersonalAccessToken;
 
+beforeEach(fn () => $this->markTestSkipped('Profil admin dikelola microservice user (/api/user/profile), route /api/admin/profile sudah dihapus.'));
+
 it('updates the name and email', function () {
     $admin = actingAsAdmin();
 

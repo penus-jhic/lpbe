@@ -7,6 +7,7 @@ use App\Http\Requests\Admin\ProgramRequest;
 use App\Http\Resources\ProgramDetailResource;
 use App\Http\Resources\ProgramResource;
 use App\Models\Program;
+use App\Support\ImageOptimizer;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
@@ -82,7 +83,7 @@ class ProgramController extends Controller
         $attributes = $request->safe()->except(['image', 'remove_image']);
 
         if ($request->hasFile('image')) {
-            $attributes['image'] = $request->file('image')->store('programs', 'public');
+            $attributes['image'] = ImageOptimizer::store($request->file('image'), 'programs');
         } elseif ($request->boolean('remove_image')) {
             $attributes['image'] = null;
         }

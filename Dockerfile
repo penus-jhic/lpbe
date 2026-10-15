@@ -4,6 +4,11 @@ COPY . .
 
 RUN apk add --no-cache postgresql-dev && \
     docker-php-ext-install pdo pdo_pgsql pgsql
+
+# gd + exif: foto unggahan admin dikecilkan & diubah ke WebP sebelum disimpan (App\Support\ImageOptimizer)
+RUN apk add --no-cache libpng-dev libjpeg-turbo-dev libwebp-dev freetype-dev && \
+    docker-php-ext-configure gd --with-jpeg --with-webp --with-freetype && \
+    docker-php-ext-install gd exif
     
 RUN apk add nodejs && \
     apk add npm

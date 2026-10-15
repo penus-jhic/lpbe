@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\FacilityRequest;
 use App\Http\Resources\FacilityResource;
 use App\Models\Facility;
+use App\Support\ImageOptimizer;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
@@ -121,7 +122,7 @@ class FacilityController extends Controller
     {
         foreach ($request->file('images', []) as $offset => $file) {
             $facility->images()->create([
-                'path' => $file->store('facilities', 'public'),
+                'path' => ImageOptimizer::store($file, 'facilities'),
                 'sort_order' => $startAt + $offset,
             ]);
         }

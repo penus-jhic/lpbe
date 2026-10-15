@@ -8,6 +8,7 @@ use App\Http\Requests\Admin\NewsRequest;
 use App\Http\Resources\NewsDetailResource;
 use App\Http\Resources\NewsResource;
 use App\Models\News;
+use App\Support\ImageOptimizer;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -86,7 +87,7 @@ class NewsController extends Controller
         $attributes = $request->safe()->except(['image', 'remove_image']);
 
         if ($request->hasFile('image')) {
-            $attributes['image'] = $request->file('image')->store('news', 'public');
+            $attributes['image'] = ImageOptimizer::store($request->file('image'), 'news');
         } elseif ($request->boolean('remove_image')) {
             $attributes['image'] = null;
         }

@@ -8,6 +8,7 @@ use App\Http\Requests\Admin\ActivityRequest;
 use App\Http\Resources\ActivityDetailResource;
 use App\Http\Resources\ActivityResource;
 use App\Models\Activity;
+use App\Support\ImageOptimizer;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Resources\Json\AnonymousResourceCollection;
@@ -112,7 +113,7 @@ class ActivityController extends Controller
         $attributes = $request->safe()->except(['image', 'remove_image']);
 
         if ($request->hasFile('image')) {
-            $attributes['image'] = $request->file('image')->store('activities', 'public');
+            $attributes['image'] = ImageOptimizer::store($request->file('image'), 'activities');
         } elseif ($request->boolean('remove_image')) {
             $attributes['image'] = null;
         }
